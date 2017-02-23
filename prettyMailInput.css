@@ -1,0 +1,57 @@
+.box{
+     height: auto;
+    width: 550px;
+    border-radius: 5px;
+    padding: 5px;
+    outline:none;
+    overflow: hidden;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #444;
+    cursor: text;
+}
+.bluebox{
+ -webkit-box-shadow: 0px 0px 10px -1px rgba(105,208,255,0.51);
+ -moz-box-shadow: 0px 0px 10px -1px rgba(105,208,255,0.51);
+ box-shadow: 0px 0px 10px -1px rgba(105,208,255,0.51); 
+   
+}
+.purplebox
+{
+-webkit-box-shadow: 0px 0px 10px -1px rgba(255,64,255,0.5);
+-moz-box-shadow: 0px 0px 10px -1px rgba(255,64,255,0.5);
+box-shadow: 0px 0px 10px -1px rgba(255,64,255,0.5); 
+}
+.error
+{
+-webkit-box-shadow: 0px 0px 10px -1px rgba(255,130,130,0.51);
+-moz-box-shadow: 0px 0px 10px -1px rgba(255,130,130,0.51);
+box-shadow: 0px 0px 10px -1px rgba(255,130,130,0.51);
+}
+.mailInput
+{
+    border:1px solid #ddd; 
+    border-radius:2px; 
+    background-color:#e0f8ff; 
+    padding:2px 7px;
+    margin: 2px;
+    line-height: 30px;
+    color: #444;
+    white-space: nowrap;
+    background: rgba(237,237,237,1);
+    background: -moz-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(246,246,246,1)));
+    background: -webkit-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+    background: -o-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+    background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+    background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#f6f6f6', GradientType=0 );
+}
+.mailInput a{
+    text-decoration: none;
+}
+.entityClear{
+    clear: both;
+}
+
