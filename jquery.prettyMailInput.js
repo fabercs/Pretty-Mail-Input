@@ -21,7 +21,8 @@
                 
                 //This is to prevent line break in input.
                 elem.on("keypress", function (e) {
-                    return e.which != 13;
+                    if(e.which == 13 || e.which == 32) //enter and space key prevent
+                        return false;
                 })
                 elem.on("keyup", function (e) {
                     if (e.which == 13) {
@@ -81,11 +82,11 @@
         return re.test(email);
     }
     var placeCaretAtEnd = function (el) {
-        el.focus();
+        
         if (typeof window.getSelection != "undefined" &&
             typeof document.createRange != "undefined") {
             var range = document.createRange();
-            range.setStartAfter(el.get(0));
+            range.setStartAfter(el.children().get(-1));
             range.collapse(false);
             var sel = window.getSelection();
             sel.removeAllRanges();
@@ -96,6 +97,7 @@
             textRange.collapse(false);
             textRange.select();
         }
+        setTimeout(function(){el.get(0).focus();}); 
     }
 
 }(jQuery, window, document));
